@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import "./Die.css";
 
 class Die extends Component {
     render() {
         return (
             <div>
-               <i className='fas fa-dice-one' />
+               <i className={` Die fas fa-dice-${this.props.face}`} />
             </div>
         );
     }
